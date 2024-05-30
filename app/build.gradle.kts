@@ -41,7 +41,7 @@ dependencies {
     //Firebase
     implementation(platform("com.google.firebase:firebase-bom:33.0.0"))
     implementation("com.google.firebase:firebase-analytics")
-
+    implementation ("com.firebaseui:firebase-ui-auth:8.0.2")
     implementation ("com.google.android.gms:play-services-auth:20.4.1")
 
     implementation(libs.androidx.core.ktx)
@@ -51,6 +51,8 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.play.services.base)
     implementation(libs.androidx.material3.android)
+    implementation(libs.firebase.auth.ktx)
+    implementation(libs.firebase.auth)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
