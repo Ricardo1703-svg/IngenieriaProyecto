@@ -23,6 +23,7 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+        btn_login = findViewById(R.id.btn_login)
         googleLogin()
     }
 
@@ -35,6 +36,7 @@ class LoginActivity : AppCompatActivity() {
                 AuthUI.getInstance()
                     .createSignInIntentBuilder()
                     .setAvailableProviders(providers)
+                    .setIsSmartLockEnabled(false)
                     .build(),
                 RC_SIGN_IN)
         }
